@@ -23,6 +23,13 @@ You do not need to further unzip the packages in the subfolders.
 
 ### Step 2
 Under `make-ipinyou-data` folder, just run `make all`.
-After the program finished, the total size of the folder will be 8.1G.
+
+After the program finished, the total size of the folder will be 14G. The files under `make-ipinyou-data` should be like this:
+```
+weinan@ZHANG:~/Project/make-ipinyou-data$ ls
+1458  2261  2997  3386  3476  LICENSE   mkyzxdata.sh   python     schema.txt
+2259  2821  3358  3427  all   Makefile  original-data  README.md
+```
+Normally, we only do experiment for each campaign (e.g. `1458`). `all` is just the merge of all the campaigns. You can delete `all` if you think it is unuseful in your experiment.
 
 For any questions, please report the issues or contact Weinan Zhang. Email: w.zhang@cs.ucl.ac.uk
