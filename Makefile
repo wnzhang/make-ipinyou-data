@@ -18,9 +18,9 @@ init: $(ORIGINALFOLDER)
 	cp $(ORIGINALFOLDER)/testing2nd/* $(TEST)
 	cp $(ORIGINALFOLDER)/testing3rd/* $(TEST)
 	bzip2 -d $(TEST)/*
-	
+	mkdir $(BASE)/all	
 
-clk: $(TRAIN)/clk*.txt
+clk: $(TRAIN)
 	cat $(TRAIN)/clk*.txt > $(BASE)/all/clk.all.txt
 
 train.log: $(BASE)/schema.txt $(BASE)/all/clk.all.txt 
