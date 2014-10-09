@@ -41,7 +41,6 @@ featindex.txt  test.log.txt  test.yzx.txt  train.log.txt  train.yzx.txt
 * `train.log.txt` and `test.log.txt` are the formalised string data for each row (record) in train and test. The first column is whether the user click the ad or not. The 14th column is the winning price for this auction.
 * `featindex.txt`maps the features to their indexes. For example, `8:115.45.195.*	29` means that the 8th column in `train.log.txt` with the string `115.45.195.*` maps to feature index `29`.
 * `train.yzx.txt` and `test.yzx.txt` are the mapped vector data for `train.log.txt` and `test.log.txt`. The format is y:click, z:wining_price, and x:features. Such data is in the standard form as introduced in [iPinYou Benchmarking](http://arxiv.org/abs/1407.7073).
-* `
 
 
 For any questions, please report the issues or contact Weinan Zhang. Email: w.zhang@cs.ucl.ac.uk
