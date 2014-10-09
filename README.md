@@ -23,5 +23,6 @@ You do not need to further unzip the packages in the subfolders.
 
 ### Step 2
 Under `make-ipinyou-data` folder, just run `make all`.
+After the program finished, the total size of the folder will be 8.1G.
 
 For any questions, please report the issues or contact Weinan Zhang. Email: w.zhang@cs.ucl.ac.uk
