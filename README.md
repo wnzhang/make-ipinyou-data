@@ -43,4 +43,4 @@ featindex.txt  test.log.txt  test.yzx.txt  train.log.txt  train.yzx.txt
 * `train.yzx.txt` and `test.yzx.txt` are the mapped vector data for `train.log.txt` and `test.log.txt`. The format is y:click, z:wining_price, and x:features. Such data is in the standard form as introduced in [iPinYou Benchmarking](http://arxiv.org/abs/1407.7073).
 
 
-For any questions, please report the issues or contact Weinan Zhang. Email: w.zhang@cs.ucl.ac.uk
+For any questions, please report the issues or contact [Weinan Zhang](http://www0.cs.ucl.ac.uk/staff/w.zhang/).
