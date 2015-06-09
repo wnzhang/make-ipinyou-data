@@ -4,7 +4,7 @@ import os
 
 if len(sys.argv) < 5:
     print 'Usage: ipinyou.folder 25 train.log.txt test.log.txt'
-    # python splitadvertisers.py /home/weinan/Project/tqchen-exp/ipinyou/ 25 ../all/train.log.txt ../all/test.log.txt
+    # python splitadvertisers.py ../ 25 ../all/train.log.txt ../all/test.log.txt
     exit(-1)
 
 ifolder = sys.argv[1]
