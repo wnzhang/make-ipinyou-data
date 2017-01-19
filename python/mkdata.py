@@ -1,6 +1,6 @@
 #!/usr/bin/python
 import sys
-import datetime
+from datetime import date
 
 if len(sys.argv) < 3:
     print 'Usage: schema clickfiles'
@@ -32,5 +32,7 @@ for l in fi:
         fo.write('1')
     else:
         fo.write('0')
-    fo.write('\t%d\t%s\t' % (int(arr[tindex][6:8]) % 7, arr[tindex][8:10]))
+    ts = arr[tindex]
+    d = date(int(ts[0:4]), int(ts[4:6]), int(ts[6:8]))
+    fo.write('\t%d\t%s\t' % (int(d.strftime("%w")), arr[tindex][8:10]))
     fo.write( l )
