@@ -1,14 +1,11 @@
 #!/usr/bin/python
 import sys
 import os
+from user_agents import parse
 
 if len(sys.argv) < 2:
     print 'Usage: input'
     exit(-1)
-
-
-oses = ["windows", "ios", "mac", "android", "linux"]
-browsers = ["chrome", "sogou", "maxthon", "safari", "firefox", "theworld", "opera", "ie"]
 
 fi = open(sys.argv[1], 'r')
 outname = sys.argv[1] + ".fmua"
@@ -17,26 +14,30 @@ fo = open(outname, 'w')
 first = True
 for l in fi:
     if first:
-        fo.write(l)
+	s = l.split('\t')
+	output = s[0]
+	for i in range(1,len(s)):
+	    if i == 7:
+		output = output + '\t' + '\t'.join(["device", "device_family", "os", "browser"])
+	    else:
+		output = output + '\t' + s[i]
+        fo.write(output)
         first = False
-        continue
     s = l.split('\t')
-    ua = s[7].lower()
-    operation = "other"
-    browser = "other"
-    for o in oses:
-        if o in ua:
-            operation = o
-            break
-    for b in browsers:
-        if b in ua:
-            browser = b
-            break
-    fmua = operation + "_" + browser
+    ua = parse(s[7])
+    if ua.is_mobile:
+	device = "m"
+    elif ua.is_tablet:
+	device = "t"
+    elif ua.is_pc:
+	device = "c"
+    device_family = ua.device.family
+    os_family = ua.os.family
+    browser = ua.browser.family
     output = s[0]
     for i in range(1, len(s)):
         if i == 7:
-            output = output + '\t' + fmua
+            output = output + '\t' + '\t'.join([device, device_family,os_family,browser])
         else:
             if len(s[i]) == 0 or s[i] == '\n':
                 s[i] = "null" + s[i]
