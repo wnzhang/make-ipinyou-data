@@ -31,6 +31,8 @@ for l in fi:
 	device = "t"
     elif ua.is_pc:
 	device = "c"
+    else:
+	device = "o"
     device_family = ua.device.family
     os_family = ua.os.family
     browser = ua.browser.family
