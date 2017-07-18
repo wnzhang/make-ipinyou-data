@@ -24,8 +24,6 @@ You do not need to further unzip the packages in the subfolders.
 ### Step 2
 Under `make-ipinyou-data` folder, just run `make all`.
 
-Note: The user agent parser used in `formalizeua.py` uses the python package [user-agents](https://pypi.python.org/pypi/user-agents).
-
 After the program finished, the total size of the folder will be 14G. The files under `make-ipinyou-data` should be like this:
 ```
 weinan@ZHANG:~/Project/make-ipinyou-data$ ls
