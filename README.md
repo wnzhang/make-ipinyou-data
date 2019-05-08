@@ -4,7 +4,11 @@ make-ipinyou-data
 This project is to formalise the iPinYou RTB data into a standard format for further researches.
 
 ### Step 0
-Go to [data.computational-advertising.org](http://data.computational-advertising.org) to download `ipinyou.contest.dataset.zip`. Unzip it and get the folder `ipinyou.contest.dataset`.
+~~Go to [data.computational-advertising.org](http://data.computational-advertising.org) to download `ipinyou.contest.dataset.zip`.~~
+
+The raw data of iPinYou (`ipinyou.contest.dataset.zip`) can be downloaded from [Dropbox](https://www.dropbox.com/s/txz0ms0axqf7jrl/ipinyou.contest.dataset.7z?dl=0).
+
+Unzip it and get the folder `ipinyou.contest.dataset`.
 
 ### Step 1
 Update the soft link for the folder `ipinyou.contest.dataset` in `original-data`. 
