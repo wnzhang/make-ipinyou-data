@@ -1,9 +1,9 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 import sys
 from datetime import date
 
 if len(sys.argv) < 2:
-    print 'Usage: schema '
+    print('Usage: schema ')
     exit(-1)
 
 schema = [ s.strip() for s in open(sys.argv[1]).read().split() ]

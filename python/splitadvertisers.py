@@ -1,9 +1,9 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 import sys
 import os
 
 if len(sys.argv) < 5:
-    print 'Usage: ipinyou.folder 25 train.log.txt test.log.txt'
+    print('Usage: ipinyou.folder 25 train.log.txt test.log.txt')
     # python splitadvertisers.py ../ 25 ../all/train.log.txt ../all/test.log.txt
     exit(-1)
 

@@ -13,11 +13,11 @@ init: $(ORIGINALFOLDER)
 	cp $(ORIGINALFOLDER)/training2nd/clk.*.bz2 $(TRAIN)
 	cp $(ORIGINALFOLDER)/training3rd/imp.*.bz2 $(TRAIN)
 	cp $(ORIGINALFOLDER)/training3rd/clk.*.bz2 $(TRAIN)
-	bzip2 -d $(TRAIN)/*
+	pbzip2 -d $(TRAIN)/*
 	mkdir -p $(TEST)
 	cp $(ORIGINALFOLDER)/testing2nd/* $(TEST)
 	cp $(ORIGINALFOLDER)/testing3rd/* $(TEST)
-	bzip2 -d $(TEST)/*
+	pbzip2 -d $(TEST)/*
 	mkdir $(BASE)/all	
 
 clk: $(TRAIN)
