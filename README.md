@@ -3,12 +3,14 @@ make-ipinyou-data
 
 This project is to formalise the iPinYou RTB data into a standard format for further researches.
 
-**You should run these codes on Linux or WSL for unexpected errors.**
+**You should run these codes on Linux or WSL for preventing unexpected errors.**
 
 ### Step 0
 The raw data of iPinYou (`ipinyou.contest.dataset.zip`) can be downloaded from [Kaggle](https://www.kaggle.com/datasets/lastsummer/ipinyou).
 
 Unzip it and get the folder `ipinyou.contest.dataset`.
+
+To speed up the process of 
 
 ### Step 1
 Update the soft link for the folder `ipinyou.contest.dataset` in `original-data`. 
