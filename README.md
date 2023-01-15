@@ -10,7 +10,12 @@ The raw data of iPinYou (`ipinyou.contest.dataset.zip`) can be downloaded from [
 
 Unzip it and get the folder `ipinyou.contest.dataset`.
 
-To speed up the process of 
+To speed up the process of bzip2, install `pbzip2`.
+```
+# for example on Ubuntu
+sudo apt-get update
+sudo apt-get install pbzip2
+```
 
 ### Step 1
 Update the soft link for the folder `ipinyou.contest.dataset` in `original-data`. 
