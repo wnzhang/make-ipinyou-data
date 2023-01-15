@@ -90,7 +90,7 @@ for line in fi:
             maxindex += 1
 
 print('feature size: ' + str(maxindex))
-featvalue = sorted(featindex.iteritems(), key=operator.itemgetter(1))
+featvalue = sorted(featindex.items(), key=operator.itemgetter(1))
 fo = open(sys.argv[5], 'w')
 for fv in featvalue:
     fo.write(fv[0] + '\t' + str(fv[1]) + '\n')
